@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+
+<head>
+    <title>Material Components for the web</title>
+    <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+</head>
+
+<body>
+    <header class="mdc-toolbar mdc-toolbar--fixed">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <span class="catalog-back">
+            <a href="/" class="mdc-toolbar__icon--menu"><i class="material-icons"></i></a>
+          </span>
+                <span class="mdc-toolbar__title catalog-title">Permanent Drawer Below Toolbar</span>
+            </section>
+        </div>
+    </header>
+    <div class="demo-content mdc-toolbar-fixed-adjust">
+        <nav class="mdc-permanent-drawer">
+            <div class="mdc-list-group">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item mdc-permanent-drawer--selected" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                    </a>
+                </nav>
+
+                <hr class="mdc-list-divider">
+
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Spam
+                    </a>
+                </nav>
+            </div>
+        </nav>
+        <main class="demo-main">
+            <h1 class="mdc-typography--display1">Permanent Drawer</h1>
+            <p class="mdc-typography--body1">It sits to the left of this content.</p>
+            <div class="extra-content-wrapper">
+                <button id="toggle-wide">Toggle extra-wide content</button>
+                <div id="extra-wide-content" class="mdc-elevation--z2" style="display: none;">&nbsp;</div>
+            </div>
+            <div class="extra-content-wrapper">
+                <button id="toggle-tall">Toggle extra-tall content</button>
+                <div id="extra-tall-content" class="mdc-elevation--z2" style="display: none;">&nbsp;</div>
+            </div>
+        </main>
+    </div>
+    <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+    <script>
+        mdc.autoInit()
+    </script>
+</body>
+
+</html>

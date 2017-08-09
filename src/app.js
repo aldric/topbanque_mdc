@@ -1,13 +1,22 @@
 import Icon from './cr.jpg';
 import $ from 'jquery';
-import Materialize from 'materialize-css';
+import M from 'materialize-css';
 import Tb from './topbanque-logo.svg';
 
 $(function () {
 
   $('.button-collapse').sideNav({ menuWidth: 350 });
-  $('ul.tabs').tabs('select_tab', 'tab_id');
+  
+  $('ul.tabs').tabs( {
+    onShow : function(tab){
+      console.log(tab);
+      //Materialize.showStaggeredList(tab);
+    }
+  });
+  
   $('.collapsible').collapsible();
+  
+  $(".dropdown-button").dropdown();
 
   $('input#search').focus(function () {
     $(this).parent().addClass('focused');
@@ -17,6 +26,7 @@ $(function () {
       $(this).parent().removeClass('focused');
     }
   });
+  console.log('loaded ...');
 
 }); // end of document ready
 

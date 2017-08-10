@@ -12,7 +12,7 @@
       <div class="nav-wrapper"><a id="logo-container" href="/" class="brand-logo center"><img id="front-page-logo" src="./topbanque-logo.svg"></img></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Comparez<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="sass.html"><i class="material-icons left indigo-text">info_outline</i>Actualités</a></li>
+          <li><a href="sass.html"><i class="material-icons left indigo-text">new_releases</i>Toutes les actualités</a></li>
           <li><a href="badges.html"><i class="material-icons left green-text">local_offer</i>Les offres du moment</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons black-text">menu</i></a>
@@ -29,8 +29,21 @@
       <li class="bold">
         <hr/>
       </li>
-      <li class="bold"><a class="waves-effect waves-teal"><i class="material-icons">multiline_chart</i>Le comparatif</a></li>
-      <li>&nbsp;</li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold topbanque">
+            <a class="collapsible-header waves-effect waves-orange"><i class="material-icons red-text darken-4">widgets</i>Tous nos comparateurs</a>
+            <div class="collapsible-body" style="display: none;">
+              <ul>
+                <li><a href="layout-fullscreen.html"><i class="material-icons blue-text darken-5">account_balance</i>Comparer les banques</a></li>
+                <li><a href="layout-fullscreen.html"><i class="material-icons amber-text darken-5">credit_card</i>Trouvez votre carte</a></li>
+                <li><a href="layout-fullscreen.html"><i class="material-icons blue-text darken-5">home</i>Les cr&eacute;dits immobiliers</a></li>
+                <li><a href="layout-fullscreen.html"><i class="material-icons pink-text">favorites</i>Les assurances vie</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li class="bold topbanque">
@@ -369,48 +382,50 @@
       <div class="col s12 m4 l3">
         <aside>
           <ul class="tabs">
-            <li class="tab col s6"><a href="#offers-tab">Offres</a></li>
-            <li class="tab col s6"><a href="#news-tab" class="active">Actualites</a></li>
+            <li class="tab col s7"><a href="#news-tab" class="actinopeve">Deni&egrave;res actualit&eacute;s</a></li>
+            <li class="tab col s5"><a href="#offers-tab">Offres</a></li>
           </ul>
           <div id="offers-tab" class="col s12">
-            <div class="card-panel blue lighten-2">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel green lighten-2">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel amber">
-              <span class="black-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel lime">
-              <span class="black-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel teal">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel cyan">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
 
           </div>
           <div id="news-tab" class="col s12">
-            <div class="card-panel teal lighten-2">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4" style="padding:5px 10px;">
+              <h6>Innovation banque en ligne : la carte bancaire Monabanq épargne pour vous</h6>
+              <img src="./picto/terminal-paiement.jpg" style="max-width: 100px;padding-right:4px;" class="left" />
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because </span>
             </div>
-            <div class="card-panel orange lighten-2">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel amber">
+            <div class="card-panel grey lighten-4">
               <span class="black-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel teal">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel teal">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
-            <div class="card-panel teal">
-              <span class="white-text">I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+            <div class="card-panel grey lighten-4">
+              <span>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
             </div>
 
           </div>
@@ -461,3 +476,14 @@
     </div>
   </div>
 </footer>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
